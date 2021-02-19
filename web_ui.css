@@ -1,0 +1,33 @@
+:root {
+    --border: #ccc;
+  }
+
+  body {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 30vh 30vw;
+  }
+
+  .controls {
+    border: 1px solid var(--border);
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .controls > div {
+    border: 1px solid var(--border);
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  .controls > div.ctrl:hover {
+    background: HSLA(213, 60%, 82%, 0.5);
+    cursor: pointer;
+  }
+
+  span {
+    transform: rotate(45deg);
+  }
